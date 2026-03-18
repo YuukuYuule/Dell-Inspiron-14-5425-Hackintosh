@@ -25,6 +25,17 @@ This build is a result of intensive tuning, including BIOS VRAM expansion and ad
 
 ## 📦 Required External Drivers (Kexts & Apps)
 
+### 📶 Wi-Fi & Bluetooth (Intel AX210)
+To keep the EFI folder lightweight, the wireless drivers are **NOT** included. Please download the latest versions from the official site:
+
+1. **Official Link:** [OpenIntelWireless (itlwm)](https://openintelwireless.github.io/)
+2. **Installation:**
+   - Download **AirportItlwm.kext** (Match your macOS version: Sonoma/Sequoia/Tahoe).
+   - Download **IntelBluetoothFirmware.kext** & **IntelBTPatcher.kext**.
+3. **Setup:**
+   - Add these kexts to your `OC/Kexts` folder.
+   - Update your `config.plist` to enable them.
+
 ### 🔊 Audio (VoodooHDA)
 To enable Speaker and Headphone output, you **MUST** install the VoodooHDA package:
 1. Download and install **VoodooHDA.pkg**.
