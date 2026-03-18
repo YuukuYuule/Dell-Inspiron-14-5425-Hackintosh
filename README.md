@@ -38,3 +38,16 @@ Install the driver to your system:
    sudo chown -R root:wheel /Library/Extensions/AMDMicrophone.kext
    sudo chmod -R 755 /Library/Extensions/AMDMicrophone.kext
    sudo kmutil load -p /Library/Extensions/AMDMicrophone.kext
+
+### 🚀 Advanced Performance: VRAM Expansion (Essential!)
+By default, the VRAM is limited to 512MB, which causes UI lag in macOS. I highly recommend increasing it to **2GB** using **Smokeless_UMAF**.
+
+1. Download [Smokeless_UMAF](https://github.com/DavidS95/Smokeless_UMAF) and create a bootable USB.
+2. Boot from the USB and navigate to:
+   - **Device Manager** -> **AMD CBS** -> **NBIO Common Options** -> **GFX Configuration**
+3. Change the following settings:
+   - **Integrated Graphics Controller:** `Forces`
+   - **UMA Mode:** `UMA_SPECIFIED`
+   - **UMA Frame Buffer Size:** `2G`
+4. Save and Exit. 
+5. In macOS, you will see **2GB VRAM**, providing much smoother UI fluidity and Metal performance.
