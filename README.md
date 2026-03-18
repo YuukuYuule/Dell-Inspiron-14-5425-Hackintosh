@@ -31,14 +31,16 @@ To enable Speaker and Headphone output, you **MUST** install the VoodooHDA packa
 2. This is required for the Preference Pane and kernel-level audio management.
 
 ### 🎙️ Internal Microphone (AMD ACP)
-Install the driver to your system:
-1. Copy `AMDMicrophone.kext` to `/Library/Extensions/`.
-2. Run these commands in Terminal:
+This build uses the excellent driver by **qhuyduong**. To enable high-quality internal stereo mic support:
+
+1. **Credits:** [AMDMicrophone (qhuyduong)](https://github.com/qhuyduong/AMDMicrophone)
+2. Copy `AMDMicrophone.kext` to `/Library/Extensions/`.
+3. Run these commands in Terminal:
    ```bash
    sudo chown -R root:wheel /Library/Extensions/AMDMicrophone.kext
    sudo chmod -R 755 /Library/Extensions/AMDMicrophone.kext
    sudo kmutil load -p /Library/Extensions/AMDMicrophone.kext
-
+   
 ### 🚀 Advanced Performance: VRAM Expansion (Essential!)
 By default, the VRAM is limited to 512MB, which causes UI lag in macOS. I highly recommend increasing it to **2GB** using **Smokeless_UMAF**.
 
