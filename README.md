@@ -18,10 +18,14 @@ This build is a result of intensive tuning, including BIOS VRAM expansion and ad
 ## ✅ What's Working
 - **GPU Acceleration:** Full Metal support with 2GB VRAM.
 - **Display Outputs:** USB-C DP & HDMI (Both 4K @ 60Hz).
-- **Audio:** Internal Speakers & Headphone Jack (Auto-switching).
-- **Microphone:** **Internal Digital Microphone (AMD ACP)** - Crystal clear stereo sound.
+- **Audio:** Internal Speakers & Headphone Jack (Auto-switching).(AppleALC)
+- **Microphone:** **Internal Digital Microphone (AMD ACP)　& Headphone Mic(Apple ALC)** - Crystal clear stereo sound.
 - **Power:** Sleep / Wake, Battery Status, and USB-C PD Charging.
 - **Input:** Precision Trackpad, Backlit Keyboard.
+
+## Apple ALC
+alcid=33 **Working ComboJack**
+Need To install **Apple HDA.kext** on System/Library/Exstensions (**macOS Tahoe**)
 
 ## 📦 Required External Drivers (Kexts & Apps)
 
@@ -30,16 +34,11 @@ To keep the EFI folder lightweight, the wireless drivers are **NOT** included. P
 
 1. **Official Link:** [OpenIntelWireless (itlwm)](https://openintelwireless.github.io/)
 2. **Installation:**
-   - Download **AirportItlwm.kext** (Match your macOS version: Sonoma/Sequoia/Tahoe).
+   - Download **AirportItlwm.kext** (Match your macOS version: Sonoma/Sequoia/).
    - Download **IntelBluetoothFirmware.kext** & **IntelBTPatcher.kext**.
 3. **Setup:**
    - Add these kexts to your `OC/Kexts` folder.
    - Update your `config.plist` to enable them.
-
-### 🔊 Audio (VoodooHDA)
-To enable Speaker and Headphone output, you **MUST** install the VoodooHDA package:
-1. Download and install **VoodooHDA.pkg**.
-2. This is required for the Preference Pane and kernel-level audio management.
 
 ### 🎙️ Internal Microphone (AMD ACP)
 This build uses the excellent driver by **qhuyduong**. To enable high-quality internal stereo mic support:
