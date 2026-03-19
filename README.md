@@ -19,7 +19,7 @@ This build is a result of intensive tuning, including BIOS VRAM expansion and ad
 - **GPU Acceleration:** Full Metal support with 2GB VRAM.
 - **Display Outputs:** USB-C DP & HDMI (Both 4K @ 60Hz).
 - **Audio:** Internal Speakers & Headphone Jack (Auto-switching).(AppleALC)
-- **Microphone:** **Internal Digital Microphone (AMD ACP)　& Headphone Mic(Apple ALC)** - Crystal clear stereo sound.
+- **Microphone:** **Internal Digital Microphone (AMD ACP) & Headphone Mic(Apple ALC)** -
 - **Power:** Sleep / Wake, Battery Status, and USB-C PD Charging.
 - **Input:** Precision Trackpad, Backlit Keyboard.
 
