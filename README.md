@@ -24,8 +24,8 @@ This build is a result of intensive tuning, including BIOS VRAM expansion and ad
 - **Input:** Precision Trackpad, Backlit Keyboard.
 
 ## Apple ALC
-alcid=33 **Working ComboJack**
-Need To install **Apple HDA.kext** on System/Library/Exstensions (**macOS Tahoe**)
+- alcid=33 **Working ComboJack**
+- Need To install **Apple HDA.kext** on System/Library/Exstensions (**macOS Tahoe**)
 
 ## 📦 Required External Drivers (Kexts & Apps)
 
